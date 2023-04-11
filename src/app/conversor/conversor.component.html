@@ -1,17 +1,15 @@
 
-<h1 id="titulo">Conversor de Medidas
-</h1>
 <form action = "">
-
+    <h1 id="titulo">Conversor de Medidas</h1>
     <h5>Medida Inicial(metros):</h5> 
-    <input type="number" name="metro"><br>
+    <input type="number" class="form-control" [(ngModel)]="metro" name="metro"><br>
     
-    <button class="btns" id="btn1" (click)="milimetro()">Converter para Milímetro (mm)</button><br>
-    <button class="btns" id="btn2" (click)="centimetro()">Converter para Centímetros (cm)</button><br>
-    <button class="btns" id="btn3" (click)="quilometro()">Converter para Quilômetro (km)</button><br>
+    <button class="btns" id="btn1" class="btn btn-secondary" (click)="milimetro()">Converter para Milímetro (mm)</button><br>
+    <button class="btns" id="btn2" class="btn btn-secondary" (click)="centimetro()">Converter para Centímetros (cm)</button><br>
+    <button class="btns" id="btn3" class="btn btn-secondary" (click)="quilometro()">Converter para Quilômetro (km)</button><br>
 
     <h5>Medida Convertida:</h5>
-    <input type="text" id="resp" readonly>
+    <input type="number" class="form-control" [(ngModel)]="resp"  name="resp" readonly>
     
 
 

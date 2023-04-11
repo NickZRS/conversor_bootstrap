@@ -8,22 +8,22 @@ import { Component } from '@angular/core';
 export class ConversorComponent {
 
     metro: number = 0;
-    resp: string = "";
+    resp: number = 0;
 
     milimetro(){
        
-      (<HTMLInputElement>document.getElementById("resp")).value = (this.metro*1000)+" Mílimetros"
+      this.resp = (this.metro*1000)
     }
 
     centimetro(){
       
-      (<HTMLInputElement>document.getElementById("resp")).value = (this.metro*100)+" Centímetros"
+      this.resp = (this.metro*100)
     }
     
 
     quilometro(){
 
-      (<HTMLInputElement>document.getElementById("resp")).value = (this.metro/1000)+" Quilômetros"
+      this.resp = (this.metro/1000)
     }
     
 
